@@ -1,0 +1,17 @@
+{
+  "window.zoomLevel": 0,
+  "breadcrumbs.enabled": true,
+  "editor.fontSize": 9.8,
+  "debug.console.fontSize": 9.8,
+  "terminal.integrated.fontSize": 9.8,
+  "editor.glyphMargin": false,
+  "workbench.activityBar.location": "default",
+  "editor.lineNumbers": "on",
+  "files.eol": "\n", // Final de linha sempre será LF
+  "workbench.editor.labelFormat": "short",
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
+  "workbench.editor.enablePreview": false,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80
+}
