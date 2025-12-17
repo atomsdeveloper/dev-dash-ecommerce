@@ -97,8 +97,7 @@ export default function FormProduct({
   const onSubmit = async (data: FormSchema) => {
     console.log("Calling the function onSubmit");
     try {
-      // Lógica para salvar os dados aqui
-      const res = data;
+      console.log(data)
 
       form.reset();
     } catch (error) {
