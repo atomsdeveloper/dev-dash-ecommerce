@@ -3,12 +3,12 @@ import { CategoriesModel, ProductModel } from "@/model/store/store-model";
 import { StoreRepository } from "./store-repository";
 
 // Database
-import store_database from "@/lib/store-db";
+import {db} from "@/lib/prisma";
 
 export class PrismaStoreRepository implements StoreRepository {
   // Return all products and order by desc
   async findAllProducts(): Promise<ProductModel[]> {
-    const products = await store_database.products.findMany({
+    const products = await db.product.findMany({
       include: {
         category: {
           select: {
@@ -29,7 +29,7 @@ export class PrismaStoreRepository implements StoreRepository {
   }
 
   async findAllCategories(): Promise<CategoriesModel[]> {
-    const categories = await store_database.category.findMany({
+    const categories = await db.category.findMany({
       include: {
         store: {
           select: {
